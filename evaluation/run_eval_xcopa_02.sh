@@ -29,7 +29,7 @@ for MODEL_SIGNATURE in "tr13f-6b3-ml-t0-lmtoks341b-t0toks13b-xp3capmix" "tr13f-6
             python run_eval.py \
             --dataset_name $DATASET_NAME \
             --dataset_config_name $DATASET_CONFIG_NAME \
-	        --dataset_split "test" \
+	        --dataset_split "validation" \
             --template_config_name $TEMPLATE_CONFIG_NAME \
             --template_name "$TEMPLATE_NAME" \
             --model_name_or_path $MODEL_NAME_OR_PATH \

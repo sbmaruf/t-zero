@@ -123,9 +123,13 @@ def main():
     prompt_template=args.prompt_template
     prompts = DatasetTemplates(prompt_template)
     prompt_names = list(prompts.name_to_id_mapping.keys())
+    cnt = 0
     for prompt_name in prompt_names:
-        print("\"", prompt_name, "\"", sep="",  end=" ")
-
+        if prompts[prompt_name].metadata.original_task:
+            print("\"", prompt_name, "\"", sep="",  end=" ")
+            cnt += 1
+    print()
+    print(cnt)
 
 if __name__ == "__main__":
     main()

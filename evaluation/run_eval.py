@@ -177,7 +177,7 @@ def main():
         datasets.utils.logging.set_verbosity_error()
         transformers.utils.logging.set_verbosity_error()
 
-
+    logger.info("Output dir: {}".format(args.output_dir))
     # Handle the output directory creation
     if accelerator.is_main_process:
         os.makedirs(args.output_dir, exist_ok=True)

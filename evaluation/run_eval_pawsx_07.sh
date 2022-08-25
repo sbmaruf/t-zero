@@ -8,7 +8,7 @@
 module load cuda11.6/toolkit/11.6.0
 source ~/anaconda3/bin/activate py3
 
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=7
 
 set -e
 

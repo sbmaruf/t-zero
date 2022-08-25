@@ -10,7 +10,7 @@ source ~/anaconda3/bin/activate py3
 
 export CUDA_VISIBLE_DEVICES=4
 
-set -e
+
 
 mkdir -p dumped
 DATASET_NAME="paws-x"

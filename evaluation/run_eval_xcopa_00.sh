@@ -10,7 +10,7 @@ source ~/anaconda3/bin/activate py3
 
 export CUDA_VISIBLE_DEVICES=0
 
-set -e
+
 
 mkdir -p dumped
 DATASET_NAME="super_glue"

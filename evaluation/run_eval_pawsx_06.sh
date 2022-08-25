@@ -10,7 +10,7 @@ source ~/anaconda3/bin/activate py3
 
 export CUDA_VISIBLE_DEVICES=6
 
-set -e
+
 
 DATASET_NAME="paws-x"
 TEMPLATE_CONFIG_NAME="paws-x/en"

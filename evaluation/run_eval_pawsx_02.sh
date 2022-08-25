@@ -66,3 +66,5 @@ for MODEL_SIGNATURE in "tr13f-6b3-ml-t0-lmtoks341b-t0toks13b-xp3capmix" "tr13f-6
         done
     done
 done
+
+sbatch run_eval_xcopa_02.sh

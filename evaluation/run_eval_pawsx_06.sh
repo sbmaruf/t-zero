@@ -8,7 +8,7 @@
 module load cuda11.6/toolkit/11.6.0
 source ~/anaconda3/bin/activate py3
 
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=6
 
 set -e
 
@@ -65,3 +65,6 @@ for MODEL_SIGNATURE in "tr13f-6b3-ml-t0-lmtoks341b-t0toks13b-xp3capmix" "tr13f-6
         done
     done
 done
+
+
+sbatch run_eval_xcopa_06.sh

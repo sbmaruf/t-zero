@@ -62,6 +62,13 @@ def parse_args():
         help="The configuration name of the dataset to use (via the datasets library).",
     )
     parser.add_argument(
+        "--template_config_name",
+        type=str,
+        default=None,
+        help="The dataset config name in promptsource.",
+        required=True,
+    )
+    parser.add_argument(
         "--template_name",
         type=str,
         default=None,
@@ -233,11 +240,7 @@ def main():
 
     # Get the prompt to apply and the possible targets.
     # TODO(Victor): If pulling from pre-processed data, remove this logic.
-    prompts = DatasetTemplates(
-        f"{args.dataset_name}"
-        if args.dataset_config_name is None
-        else f"{args.dataset_name}/{args.dataset_config_name}"
-    )
+    prompts = DatasetTemplates(args.template_config_name)
     template = prompts[args.template_name]
 
     def preprocess_function(examples):

@@ -1,3 +1,6 @@
+import argparse
+from promptsource.templates import DatasetTemplates
+
 template_list = {
     ("super_glue", "rte"): [
         "MNLI crowdsource",
@@ -104,3 +107,25 @@ template_list = {
         "choose",
     ]
 }
+
+def main():
+
+    parser = argparse.ArgumentParser(description="Reproduce main evaluation in T0.")
+    parser.add_argument(
+        "--prompt_template",
+        type=str,
+        default=None,
+        help="The name of the dataset to use (via the datasets library).",
+        required=True,
+    )
+    args = parser.parse_args()
+
+    prompt_template=args.prompt_template
+    prompts = DatasetTemplates(prompt_template)
+    prompt_names = list(prompts.name_to_id_mapping.keys())
+    for prompt_name in prompt_names:
+        print("\"", prompt_name, "\"", sep="",  end=" ")
+
+
+if __name__ == "__main__":
+    main()

@@ -14,9 +14,9 @@ export CUDA_VISIBLE_DEVICES=4
 
 mkdir -p dumped
 DATASET_NAME="super_glue"
-TEMPLATE_CONFIG_NAME="super_glue/xcopa"
+TEMPLATE_CONFIG_NAME="super_glue/copa"
 for MODEL_SIGNATURE in "tr13f-6b3-ml-t0-lmtoks341b-t0toks13b-xp3capmix" "tr13f-6b3-ml-t0-lmtoks341b-t0toks13b-p31"; do
-    DATASET_CONFIG_NAME="xcopa"
+    DATASET_CONFIG_NAME="copa"
     MODEL_NAME_OR_PATH="bigscience/$MODEL_SIGNATURE"
     for TEMPLATE_NAME in "exercise" "…What could happen next, C1 or C2?" "i_am_hesitating" "plausible_alternatives" "C1 or C2? premise, so/because…" "…As a result, C1 or C2?" "best_option" "…which may be caused by" "more likely" "cause_effect" "…why? C1 or C2" "choose" ; 
         do

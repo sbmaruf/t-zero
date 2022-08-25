@@ -41,7 +41,7 @@ from transformers import (
 from promptsource.templates import DatasetTemplates
 
 from t0.data_collator import DataCollatorForMultipleChoice
-from t0.model import ModelBase
+from model import ModelBase, DecoderModel
 
 logger = logging.getLogger(__name__)
 
@@ -234,12 +234,13 @@ def main():
             raise ValueError("Please define a pad token id.")
 
 
-    model = ModelBase.from_config(
-        config=config,
-        model_name_or_path=args.model_name_or_path,
-        parallelize=args.parallelize,
-        use_auth_token=True
-    )
+    # model = ModelBase.from_config(
+    #     config=config,
+    #     model_name_or_path=args.model_name_or_path,
+    #     parallelize=args.parallelize,
+    #     use_auth_token=True
+    # )
+    model = DecoderModel(config=config, model_name_or_path=args.model_name_or_path, parallelize=args.parallelize, use_auth_token=True)
 
     # Preprocessing the datasets.
     # First we tokenize all the texts.

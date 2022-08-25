@@ -62,6 +62,12 @@ def parse_args():
         help="The configuration name of the dataset to use (via the datasets library).",
     )
     parser.add_argument(
+        "--dataset_split",
+        type=str,
+        default="validation",
+        help="The configuration name of the dataset to use (via the datasets library).",
+    )
+    parser.add_argument(
         "--template_config_name",
         type=str,
         default=None,
@@ -187,7 +193,7 @@ def main():
             assert args.dataset_config_name in ["dev_r1", "dev_r2", "dev_r3"], error_message
             raw_datasets = load_dataset(args.dataset_name, split=args.dataset_config_name)
         else:
-            raw_datasets = load_dataset(args.dataset_name, args.dataset_config_name, split="validation")
+            raw_datasets = load_dataset(args.dataset_name, args.dataset_config_name, split=args.dataset_split)
     #TODO(Victor): enable loading pre-processed dataset from https://huggingface.co/datasets/bigscience/P3
 
     # Trim a number of evaluation examples
@@ -202,18 +208,18 @@ def main():
     # In distributed training, the .from_pretrained methods guarantee that only one local process can concurrently
     # download model & vocab.
     if args.config_name:
-        config = AutoConfig.from_pretrained(args.config_name)
+        config = AutoConfig.from_pretrained(args.config_name, use_auth_token=True)
     elif args.model_name_or_path:
-        config = AutoConfig.from_pretrained(args.model_name_or_path)
+        config = AutoConfig.from_pretrained(args.model_name_or_path, use_auth_token=True)
     else:
         raise ValueError(
             "Either `args.config_name` or `args.model_name_or_path` should be provided."
         )
 
     if args.tokenizer_name:
-        tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name, use_fast=not args.use_slow_tokenizer, padding_side="left")
+        tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name, use_fast=not args.use_slow_tokenizer, padding_side="left", use_auth_token=True)
     elif args.model_name_or_path:
-        tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path, use_fast=not args.use_slow_tokenizer, padding_side="left")
+        tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path, use_fast=not args.use_slow_tokenizer, padding_side="left", use_auth_token=True)
     else:
         raise ValueError(
             "You are instantiating a new tokenizer from scratch. This is not supported by this script."
@@ -231,7 +237,8 @@ def main():
     model = ModelBase.from_config(
         config=config,
         model_name_or_path=args.model_name_or_path,
-        parallelize=args.parallelize
+        parallelize=args.parallelize,
+        use_auth_token=True
     )
 
     # Preprocessing the datasets.

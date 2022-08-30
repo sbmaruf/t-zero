@@ -1,0 +1,8 @@
+{
+    "dataset_name": "paws-x",
+    "dataset_config_name": "fr",
+    "template_name": "Meaning",
+    "evaluation": {
+        "accuracy": 0.973
+    }
+}

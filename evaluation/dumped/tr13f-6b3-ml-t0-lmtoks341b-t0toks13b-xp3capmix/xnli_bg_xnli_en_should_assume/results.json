@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "bg",
+    "template_name": "should assume",
+    "evaluation": {
+        "accuracy": 0.41317365269461076
+    }
+}

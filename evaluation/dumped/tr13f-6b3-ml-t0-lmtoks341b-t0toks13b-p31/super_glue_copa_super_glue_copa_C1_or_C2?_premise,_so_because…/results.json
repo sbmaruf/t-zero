@@ -1,0 +1,8 @@
+{
+    "dataset_name": "super_glue",
+    "dataset_config_name": "copa",
+    "template_name": "C1 or C2? premise, so/because\u2026",
+    "evaluation": {
+        "accuracy": 0.62
+    }
+}

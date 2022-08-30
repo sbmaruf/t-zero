@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xcopa",
+    "dataset_config_name": "et",
+    "template_name": "cause_effect",
+    "evaluation": {
+        "accuracy": 0.494
+    }
+}

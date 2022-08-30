@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xcopa",
+    "dataset_config_name": "vi",
+    "template_name": "exercise",
+    "evaluation": {
+        "accuracy": 0.636
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "dataset_name": "paws-x",
+    "dataset_config_name": "ko",
+    "template_name": "Meaning-no-label",
+    "evaluation": {
+        "accuracy": 0.7005
+    }
+}

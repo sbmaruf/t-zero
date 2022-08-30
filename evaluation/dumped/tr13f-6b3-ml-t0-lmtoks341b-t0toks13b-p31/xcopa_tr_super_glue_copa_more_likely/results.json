@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xcopa",
+    "dataset_config_name": "tr",
+    "template_name": "more likely",
+    "evaluation": {
+        "accuracy": 0.484
+    }
+}

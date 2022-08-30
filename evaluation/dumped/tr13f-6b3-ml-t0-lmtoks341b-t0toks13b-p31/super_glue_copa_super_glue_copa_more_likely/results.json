@@ -1,0 +1,8 @@
+{
+    "dataset_name": "super_glue",
+    "dataset_config_name": "copa",
+    "template_name": "more likely",
+    "evaluation": {
+        "accuracy": 0.76
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "ru",
+    "template_name": "consider always/sometimes/never",
+    "evaluation": {
+        "accuracy": 0.45109780439121755
+    }
+}

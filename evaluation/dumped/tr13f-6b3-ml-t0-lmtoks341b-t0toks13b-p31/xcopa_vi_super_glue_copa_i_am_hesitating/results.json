@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xcopa",
+    "dataset_config_name": "vi",
+    "template_name": "i_am_hesitating",
+    "evaluation": {
+        "accuracy": 0.58
+    }
+}

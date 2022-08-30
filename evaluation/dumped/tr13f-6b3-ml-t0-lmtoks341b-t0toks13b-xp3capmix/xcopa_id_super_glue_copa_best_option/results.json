@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xcopa",
+    "dataset_config_name": "id",
+    "template_name": "best_option",
+    "evaluation": {
+        "accuracy": 0.628
+    }
+}

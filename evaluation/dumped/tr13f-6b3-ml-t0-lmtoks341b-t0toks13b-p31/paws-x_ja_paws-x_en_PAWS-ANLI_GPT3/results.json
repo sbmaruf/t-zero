@@ -1,0 +1,8 @@
+{
+    "dataset_name": "paws-x",
+    "dataset_config_name": "ja",
+    "template_name": "PAWS-ANLI GPT3",
+    "evaluation": {
+        "accuracy": 0.706
+    }
+}

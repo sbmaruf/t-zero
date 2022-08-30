@@ -1,0 +1,8 @@
+{
+    "dataset_name": "paws-x",
+    "dataset_config_name": "de",
+    "template_name": "Rewrite",
+    "evaluation": {
+        "accuracy": 0.886
+    }
+}

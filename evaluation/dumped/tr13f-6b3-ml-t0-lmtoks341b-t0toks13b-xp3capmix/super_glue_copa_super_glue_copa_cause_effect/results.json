@@ -1,0 +1,8 @@
+{
+    "dataset_name": "super_glue",
+    "dataset_config_name": "copa",
+    "template_name": "cause_effect",
+    "evaluation": {
+        "accuracy": 0.72
+    }
+}

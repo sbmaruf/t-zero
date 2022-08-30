@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xcopa",
+    "dataset_config_name": "th",
+    "template_name": "\u2026What could happen next, C1 or C2?",
+    "evaluation": {
+        "accuracy": 0.478
+    }
+}

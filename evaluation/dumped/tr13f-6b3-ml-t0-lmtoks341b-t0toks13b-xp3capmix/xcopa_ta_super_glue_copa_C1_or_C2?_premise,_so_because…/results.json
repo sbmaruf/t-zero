@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xcopa",
+    "dataset_config_name": "ta",
+    "template_name": "C1 or C2? premise, so/because\u2026",
+    "evaluation": {
+        "accuracy": 0.498
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "dataset_name": "paws-x",
+    "dataset_config_name": "zh",
+    "template_name": "Concatenation",
+    "evaluation": {
+        "accuracy": 0.9475
+    }
+}

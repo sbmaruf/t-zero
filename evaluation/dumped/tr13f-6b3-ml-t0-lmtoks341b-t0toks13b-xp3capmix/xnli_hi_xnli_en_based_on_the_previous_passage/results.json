@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "hi",
+    "template_name": "based on the previous passage",
+    "evaluation": {
+        "accuracy": 0.4884231536926148
+    }
+}

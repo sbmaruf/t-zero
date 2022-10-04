@@ -47,3 +47,20 @@ python run_eval.py \
 ```
 
 Note that this feature is still an experimental feature under 🤗 Transformers.
+
+## Folder Naming
+
+for all experiments in `dumped_trans` and `dumped` folder, 
+
+```
+"dumped_trans"/$MODEL_SIGNATURE/$DATASET_NAME"_"$DATASET_CONFIG_NAME"_"$TEMPLATE_CONFIG_FLAG"_"$TEMPLATE_FLAG
+```
+
+- `$MODEL_SIGNATURE` is the hf-model name. 
+- `$DATASET_NAME` is the name of the the dataset (i.e., xnli)
+- `$DATASET_CONFIG_NAME` is the subset of the hf-dataset (i.e., en)
+- `$TEMPLATE_CONFIG_FLAG` is the name of the template directory. (i.e., xnli)
+- `$TEMPLATE_FLAG` is the name of the subset directory at promptsource template directory. (i.e., en)
+
+In the experiments we apply english prompt to target language. hence the above format. The translated prompt can be found in https://github.com/sbmaruf/promptsource
+

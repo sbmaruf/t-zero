@@ -33,7 +33,8 @@ for MODEL_SIGNATURE in "tr13f-6b3-ml-t0-lmtoks341b-t0toks13b-xp3capmix" "tr13f-6
                 --template_config_name $TEMPLATE_CONFIG_NAME \
                 --template_name "$TEMPLATE_NAME" \
                 --model_name_or_path $MODEL_NAME_OR_PATH \
-                --output_dir $OUTPUT_DIR
+                --output_dir $OUTPUT_DIR \
+		--per_device_eval_batch_size 1
             fi
 
             TEMPLATE_CONFIG_NAME=$DATASET_NAME/"en"
@@ -52,7 +53,8 @@ for MODEL_SIGNATURE in "tr13f-6b3-ml-t0-lmtoks341b-t0toks13b-xp3capmix" "tr13f-6
                 --template_config_name $TEMPLATE_CONFIG_NAME \
                 --template_name "$TEMPLATE_NAME" \
                 --model_name_or_path $MODEL_NAME_OR_PATH \
-                --output_dir $OUTPUT_DIR
+                --output_dir $OUTPUT_DIR \
+		--per_device_eval_batch_size 1
             fi
         done
     done

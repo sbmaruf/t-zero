@@ -10,7 +10,7 @@ parser.add_argument(
     )
 args = parser.parse_args()
 
-folders = "dumped"
+folders = "dumped_trans"
 cnt = 0
 model_folders = os.listdir(folders)
 for model_folder in model_folders:

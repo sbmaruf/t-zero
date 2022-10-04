@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "ru",
+    "template_name": "take the following as truth",
+    "evaluation": {
+        "accuracy": 0.4630738522954092
+    }
+}

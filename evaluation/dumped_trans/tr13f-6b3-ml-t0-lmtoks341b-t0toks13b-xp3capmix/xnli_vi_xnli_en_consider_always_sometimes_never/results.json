@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "vi",
+    "template_name": "consider always/sometimes/never",
+    "evaluation": {
+        "accuracy": 0.4217564870259481
+    }
+}

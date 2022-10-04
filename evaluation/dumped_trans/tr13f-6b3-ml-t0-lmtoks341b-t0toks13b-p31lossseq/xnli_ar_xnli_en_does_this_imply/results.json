@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "ar",
+    "template_name": "does this imply",
+    "evaluation": {
+        "accuracy": 0.49241516966067866
+    }
+}

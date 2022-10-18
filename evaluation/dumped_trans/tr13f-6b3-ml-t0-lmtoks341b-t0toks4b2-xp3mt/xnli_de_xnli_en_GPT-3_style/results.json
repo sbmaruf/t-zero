@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "de",
+    "template_name": "GPT-3 style",
+    "evaluation": {
+        "accuracy": 0.455688622754491
+    }
+}

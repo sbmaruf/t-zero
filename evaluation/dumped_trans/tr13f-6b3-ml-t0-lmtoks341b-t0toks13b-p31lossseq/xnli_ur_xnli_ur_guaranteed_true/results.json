@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "ur",
+    "template_name": "guaranteed true",
+    "evaluation": {
+        "accuracy": 0.3137724550898204
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "sw",
+    "template_name": "does it follow that",
+    "evaluation": {
+        "accuracy": 0.4235528942115768
+    }
+}

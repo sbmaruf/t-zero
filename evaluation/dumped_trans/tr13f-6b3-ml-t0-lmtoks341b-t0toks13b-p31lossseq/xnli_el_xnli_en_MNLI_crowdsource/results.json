@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "el",
+    "template_name": "MNLI crowdsource",
+    "evaluation": {
+        "accuracy": 0.33073852295409184
+    }
+}

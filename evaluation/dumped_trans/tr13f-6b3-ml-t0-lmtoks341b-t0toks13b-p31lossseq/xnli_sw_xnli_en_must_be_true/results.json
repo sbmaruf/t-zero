@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "sw",
+    "template_name": "must be true",
+    "evaluation": {
+        "accuracy": 0.4025948103792415
+    }
+}

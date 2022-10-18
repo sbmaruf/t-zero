@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "tr",
+    "template_name": "can we infer",
+    "evaluation": {
+        "accuracy": 0.32415169660678644
+    }
+}

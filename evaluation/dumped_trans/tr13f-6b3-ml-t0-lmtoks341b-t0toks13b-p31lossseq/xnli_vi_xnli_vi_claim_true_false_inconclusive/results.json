@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "vi",
+    "template_name": "claim true/false/inconclusive",
+    "evaluation": {
+        "accuracy": 0.42115768463073855
+    }
+}

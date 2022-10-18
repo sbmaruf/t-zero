@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "hi",
+    "template_name": "guaranteed/possible/impossible",
+    "evaluation": {
+        "accuracy": 0.3377245508982036
+    }
+}

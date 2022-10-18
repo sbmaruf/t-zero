@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "fr",
+    "template_name": "justified in saying",
+    "evaluation": {
+        "accuracy": 0.49620758483033933
+    }
+}

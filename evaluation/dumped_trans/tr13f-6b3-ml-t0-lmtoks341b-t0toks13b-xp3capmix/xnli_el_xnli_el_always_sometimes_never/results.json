@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "el",
+    "template_name": "always/sometimes/never",
+    "evaluation": {
+        "accuracy": 0.34151696606786425
+    }
+}

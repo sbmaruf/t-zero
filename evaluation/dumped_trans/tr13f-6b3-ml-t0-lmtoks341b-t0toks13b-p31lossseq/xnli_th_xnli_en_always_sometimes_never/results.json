@@ -1,0 +1,8 @@
+{
+    "dataset_name": "xnli",
+    "dataset_config_name": "th",
+    "template_name": "always/sometimes/never",
+    "evaluation": {
+        "accuracy": 0.41916167664670656
+    }
+}
